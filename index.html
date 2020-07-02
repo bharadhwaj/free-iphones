@@ -1,17 +1,29 @@
 <html>
-  <head>
-    <script>
-      $(function(){
-        $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
 
-        // If you want to keep full screen on window resize
-        $(window).resize(function(){
-          $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#video').css({
+                width: $(window).innerWidth() + 'px',
+                height: $(window).innerHeight() + 'px'
+            });
+
+            $(window).resize(function () {
+                $('#video').css({
+                    width: $(window).innerWidth() + 'px',
+                    height: $(window).innerHeight() + 'px'
+                });
+            });
         });
-      });
     </script>
-  </head>
-  <body>
-    <iframe id="video" src="//www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-  <body>
+
+</head>
+
+<body>
+    <iframe id="video" src="//www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=1" frameborder="0"
+        allowfullscreen="allowfullscreen"></iframe>
+
+    <body>
+
 </html>
